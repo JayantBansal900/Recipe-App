@@ -163,6 +163,6 @@ This project is created for educational and learning purposes.
 
 ## 👨‍💻 Author
 
-**Jayant**
+**Jayant Bansal**
 
 Built as a frontend web development project using HTML, CSS, JavaScript, and TheMealDB API.
