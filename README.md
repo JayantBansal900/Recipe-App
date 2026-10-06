@@ -3,6 +3,10 @@
 A simple and responsive Recipe App built using **HTML, CSS, and JavaScript**.  
 The application uses **TheMealDB API** to fetch recipes and allows users to search, explore categories, view recipe details, and discover random meals.
 
+## 🌐 Live Demo
+
+🚀 **Live Website:** [https://jayantbansal900.github.io/Recipe-App/](https://jayantbansal900.github.io/Recipe-App/)
+
 ## ✨ Features
 
 - 🔍 Search recipes by name
@@ -28,11 +32,10 @@ The application uses **TheMealDB API** to fetch recipes and allows users to sear
 
 This project uses the free **TheMealDB API** for recipe data.
 
-API Documentation:
-
+**API Documentation:**  
 https://www.themealdb.com/api.php
 
-Base API URL:
+**Base API URL:**
 
 ```text
 https://www.themealdb.com/api/json/v1/1
@@ -82,13 +85,13 @@ Contains the main application logic including API calls, recipe search, category
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+git clone https://github.com/JayantBansal900/Recipe-App.git
 ```
 
 ### 2. Open the project folder
 
 ```bash
-cd YOUR-REPOSITORY-NAME
+cd Recipe-App
 ```
 
 ### 3. Start a local server
@@ -99,7 +102,7 @@ If Python is installed:
 python -m http.server 5500
 ```
 
-or on some Windows systems:
+Or on some Windows systems:
 
 ```bash
 py -m http.server 5500
@@ -114,6 +117,18 @@ http://localhost:5500
 ```
 
 You can also open `index.html` directly in the browser, although using a local server is recommended.
+
+## 🚀 Deployment
+
+This project is deployed using **GitHub Pages**.
+
+Every update pushed to the `main` branch can be published to the live website through GitHub Pages.
+
+**Live URL:**
+
+```text
+https://jayantbansal900.github.io/Recipe-App/
+```
 
 ## 🎯 How It Works
 
