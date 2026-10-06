@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1><i class="fas fa-utensils"></i> Recipe App</h1>
+
+        <form id="searchForm">
+            <input type="text" class="searchBox" placeholder="Search any recipe..." autocomplete="off">
+            <button type="submit" class="searchbtn">
+                <i class="fas fa-search"></i> Search
+            </button>
+        </form>
+    </nav>
+
+    <section class="explore-section">
+        <div class="explore-header">
+            <div>
+                <h2>Explore Recipes</h2>
+                <p>Find something delicious to cook today.</p>
+            </div>
+
+            <button type="button" id="surpriseBtn">
+                <i class="fas fa-random"></i> Surprise Me
+            </button>
+        </div>
+
+        <div class="filter-row">
+            <button type="button" id="allBtn" class="all-btn active-filter">
+                <i class="fas fa-th-large"></i> All
+            </button>
+
+            <select id="categoryFilter">
+                <option value="">Select Category</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Goat">Goat</option>
+                <option value="Lamb">Lamb</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Pork">Pork</option>
+                <option value="Seafood">Seafood</option>
+                <option value="Side">Side</option>
+                <option value="Starter">Starter</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Vegetarian">Vegetarian</option>
+            </select>
+
+            <button type="button" id="clearBtn">
+                <i class="fas fa-times"></i> Clear
+            </button>
+        </div>
+
+        <div class="popular-section">
+            <span>Popular:</span>
+
+            <button type="button" class="popular-btn" data-category="Chicken">Chicken</button>
+            <button type="button" class="popular-btn" data-category="Vegetarian">Vegetarian</button>
+            <button type="button" class="popular-btn" data-category="Seafood">Seafood</button>
+            <button type="button" class="popular-btn" data-category="Dessert">Dessert</button>
+            <button type="button" class="popular-btn" data-category="Pasta">Pasta</button>
+        </div>
+    </section>
+</header>
+
+<main>
+    <div class="results-heading">
+        <h2 id="resultsTitle">Discover Recipes</h2>
+        <span id="recipeCount"></span>
+    </div>
+
+    <section class="recipe-container">
+        <div class="loader">Loading recipes...</div>
+    </section>
+</main>
+
+<!-- Recipe Details Popup -->
+<div class="popup-overlay" id="popupOverlay">
+    <div class="recipe-details">
+        <button type="button" class="recipe-close-btn" aria-label="Close recipe">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="recipe-details-content"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
